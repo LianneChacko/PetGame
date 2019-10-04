@@ -1,52 +1,40 @@
 package petgame3;
 
-import java.util.Scanner;
-    public class Cat extends Pets
-{
+public class Cat extends Pets {
 
     public Cat(String name, int age) {
         super(name, age);
     }
+
     @Override
-    public void talk(){
-        mood = Math.abs(rand.nextInt(100));
-        energy =Math.abs(rand.nextInt(100));
-
-        System.out.println(name+"Meeeow");
-        System.out.println("Mood:" +mood+  "Energy:" +energy+ "full:"+full );
-
+    public void talk() {                                                                 //generates random numbers to express the Cat's EXP whe it talks
+        mood = mood - Math.abs(rand.nextInt(5 + 1));
+        energy = energy - Math.abs(rand.nextInt(5 + 1));
+        System.out.println("Meow Meow");
+        System.out.println("Mood:" + mood + " Energy:" + energy + " Full:" + full);
     }
-     public void CatInfo()
-     {
-         
-         Scanner sc = new Scanner(System.in);
-         for(int i = 0; i < 3; i++){
-         int select = sc.nextInt();
-         
-         if(select == 1)
-         {
-             
-             System.out.println("Your Cat"+Pets.name+" is eating");
-             feed();
-         }
-         if(select == 2)
-         {   
-             System.out.println("Your Cat"+name+"is playing");
-             play();
-         }
-         if(select == 3)
-         {   
-             System.out.println("Your Cat"+name+"is sleeping");
-             sleep();
-         }
-         if(select == 4)
-         {   
-             System.out.println("Your Cat"+name+" is Meowing");
-             talk();
-         }
-         }
-         sleep();
-         System.out.println("Its the end of the day :) Your Cat" + name + "is sleeping");
-         
-     }
+
+    @Override
+    public void feed() {                                                                  //generates random numbers to express the Cats's EXP whe it gets fed
+        full = full + Math.abs(rand.nextInt(20 + 1));
+        energy = energy + Math.abs(rand.nextInt(10 + 1));
+        mood = mood + Math.abs(rand.nextInt(5 + 1));
+        System.out.println("Mood:" + mood + " Energy:" + energy + " Full:" + full);
+    }
+
+    @Override
+    public void sleep() {
+        full = full - Math.abs(rand.nextInt(5 + 1));
+        energy = energy + Math.abs(rand.nextInt(20 + 1));
+        mood = mood + Math.abs(rand.nextInt(7 + 1));
+        System.out.println("Mood:" + mood + " Energy:" + energy + " Full:" + full);
+    }
+
+    @Override
+    public void play() {
+        full = full - Math.abs(rand.nextInt(20 + 1));
+        energy = energy - Math.abs(rand.nextInt(7 + 1));
+        mood = mood + Math.abs(rand.nextInt(20 + 1));
+        System.out.println("Mood:" + mood + " Energy:" + energy + " Full:" + full);
+    }
 }

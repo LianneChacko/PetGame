@@ -1,1 +1,9 @@
-
+Owner username:nidhi
+Pets name:bruno
+Pets age:2
+Owner username:b
+Pets name:n
+Pets age:5
+Owner username:ffft
+Pets name:ggy
+Pets age:4

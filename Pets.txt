@@ -1,13 +1,16 @@
-Hello!Please choose your pet 1.Dog 2.Cat 3.Rabbit 4.Guinea pig
-1.Dog  .-"-.          
-       /|6 6|\
-      {/(_0_)\}
-       _/ ^ \_
-      (/ /^\ \)-'
+                                                                             Instructions:
+                                                                             -------------------------------------------------------------------------------------------------------------
+                                                                             1) Choose your pet by number or entering the name for example "Dog"
+1.Dog   .-"-.                                                                2) Enter your name/username 
+       /|6 6|\                                                               3) Give your pet a name
+      {/(_0_)\}                                                              4) Choose action for your pet 3 times means one day. actions cause full, moog and energy to fluctuate
+       _/ ^ \_                                                               5) After 1 day your pet will age by 1 year.
+      (/ /^\ \)-'                                                            6) After 3 Days the game is over.
        ""' '""
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-2.Cat.       .         
+2.Cat
+    .       .         
     \`-"'"-'/
      } 6 6 {    
     =.  Y  ,=   
@@ -35,3 +38,4 @@ Hello!Please choose your pet 1.Dog 2.Cat 3.Rabbit 4.Guinea pig
        .(   _(   )_/
       '---.~_ _ _&
 -------------------------
+Hello!Please choose your pet 1.Dog 2.Cat 3.Rabbit 4.Hamster 
